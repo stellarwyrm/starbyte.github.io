@@ -8,7 +8,7 @@ function getCookie(name) {
 function setThemeCookie(mode) {
     if (cookieEnabled) {
         document.cookie = "theme=" + mode + ";max-age="
-            + 60 * 60 * 24 * 7;
+            + 60 * 60 * 24 * 7 + ";path=/";
     }
 }
 

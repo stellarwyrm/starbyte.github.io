@@ -9,14 +9,14 @@ const rejectBtn =
 
 acceptBtn.onclick = () => {
     document.cookie = "bakedby=swyrm;max-age="
-        + 60 * 60 * 24 * 7;
+        + 60 * 60 * 24 * 7 + ";path=/";
     if (document.cookie) {
         consentBox.classList.add("hide");
         cookieEnabled = true;
         // save theme
         mode = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)? "dark":"light";
         document.cookie = "theme="+mode+";max-age="
-            + 60 * 60 * 24 * 7;
+            + 60 * 60 * 24 * 7 + ";path=/";
     } else {
         alert
             ("Cookie couldn't be set. Try"+
