@@ -182,7 +182,7 @@
     z-index: 100;
     transition: 1s filter;
     opacity: 80%;
-    filter: contrast(0.6) brightness(var(--brightness-val));
+    filter: saturate(0.4) contrast(0.6) brightness(var(--brightness-val));
     background-size: cover;
     background-repeat: no-repeat;
     width: 27vw;
