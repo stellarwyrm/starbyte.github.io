@@ -36,6 +36,8 @@ if (checkCookie !== -1) {
     consentBox.classList.add("hide");
 
     // set theme
+
+    document.getElementById("preferMode").media='none';
     if(getCookie("theme").localeCompare("dark") == 0){
         document.documentElement.style.setProperty("--brightness-val", "70%");
         document.documentElement.style.setProperty("color-scheme", "dark");
