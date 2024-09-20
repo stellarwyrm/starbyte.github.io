@@ -5,22 +5,31 @@
     
     /* Unfortunately for each color setting location there needs
     a redundant color assignment for older browsers :( */
-    --bg-col:   light-dark(#e4e2ff, #0e1b2a);
+    --bg-col:   light-dark(#ebe9ff, #0e1b2a);
     --h1-col:   light-dark(#fd0256, #09fed8);
     --h2-col:   light-dark(#ff5111, #78ffb9);
     --h3-col:   light-dark(#ff7a46, #53ecd0);
     --h4-col:   light-dark(#ff0073, #24a9f7);
     --body-col: light-dark(#1a1a1a, white);
     --link-col: light-dark(#4f2cff, #ff0077);
-    --brk-col: light-dark(#324a62, #567b92);
+    --brk-col:  light-dark(#324a62, #567b92);
+
+    --brightness-val:150%;
   }
-  
+
   body {
     margin: 0;
     background-color: #0e1b2a;
     /* Ease in */
     transition: 1s;
     background-color: var(--bg-col);
+  }
+
+
+  /* HEADER */
+
+  .header, header-content, header-background {
+    z-index:10000;
   }
 
   .header:not(header-content) {
@@ -41,6 +50,7 @@
 
   .header-background{
     position: sticky;
+    z-index: 10000;
     top: 0;
 
     width: 100%;
@@ -53,18 +63,14 @@
     mask-image: linear-gradient(black, #000000f0 50%, transparent);
   }
 
-
-  .button {
-    transition: .3s;
-
-  }
-
   .header-content {
+    z-index: 20000;
     position: sticky;
     top: 0;
     height: auto;
   }
   
+  /* TEXT */
   
   h1 {
     color: #d0ffb9;
@@ -110,34 +116,56 @@
   p {
     color: white;
     color: var(--body-col);
-    font-family: Avenir, Arial;
+    font-family: "Inria Sans", Georgia, serif;
     margin-left: 40px;
   }
   a {
-    color: #ff0077;
-    color: var(--link-col);
-    font-family: Futura, Arial;
-    margin-left: 20px;
+    color: inherit;
+    text-decoration: inherit;
+    /* color: #ff0077; */
+    /* color: var(--link-col); */
+    /* font-family: Futura, Arial; */
+    /* margin-left: 20px; */
+  }
+  i {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
   }
 
-  /* Table */
+  /* TABLE */
   table {
     width: 98%;
     margin: 10px; 
     background-blend-mode: overlay;
   }
   td {
-    font-family: "Roboto Condensed", serif;
+    position: relative;
+    z-index: 200;
+    font-family: "Roboto Condensed", serif !important;
     text-transform: uppercase;
     font-style: normal;
-    font-weight: 200;
-    font-size: 2vw;
+    font-weight: 500;
+    font-size: 3vw;
     text-align: center;
+    width: 27vw;
+    height: 27vw;
 
     color: #ffffff;
     color: var(--body-col);
-    padding: 6vw;
   }
+  .table-content {
+    z-index: 900;
+    position: absolute;
+    offset: inherit;
+    top: 43.5%;
+    width: 27vw;
+    pointer-events: none;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
   th {
     color: #53ecd0;
     color: var(--h3-col);
@@ -146,7 +174,30 @@
     font-style: normal;
     font-size: 4vw;
     letter-spacing: -0.1rem;
-    width:20%;
+    width:19%;
     height: min-content;
     text-align:right;
+  }
+  .table-element {
+    z-index: 100;
+    transition: 1s filter;
+    opacity: 80%;
+    filter: contrast(0.6) brightness(var(--brightness-val));
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27vw;
+    height: 27vw;
+  }
+
+
+  .table-element:hover {
+    opacity: 100%;
+    filter: none;
+  }
+
+  /* OTHER ELEMENTS */
+
+  .button {
+    transition: .3s;
+
   }

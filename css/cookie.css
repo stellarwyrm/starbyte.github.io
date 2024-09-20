@@ -1,0 +1,81 @@
+  /* Based on https://www.geeksforgeeks.org/how-to-create-cookie-consent-box-using-html-css-and-javascript/ */
+  #consentBox {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    margin-left: -15vw;
+    width: 30vw;
+    z-index: 100000000;
+    background: #0e1b2a;
+    background: var(--bg-col);
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  #consentBox.hide {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+  }
+
+  #consentBox.hide {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+    }
+
+    ::selection {
+        color: #fff;
+        background: #229a0f;
+    }
+
+    #consentContent p {
+        color: #858585;
+        margin: 10px 0 20px 0;
+    }
+
+    #consentContent .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .okCookie,
+    .noCookie {
+        padding: 12px 30px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-family: "Roboto Mono", monospace;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .okCookie {
+        background: #11a086;
+        margin-right: 10px;
+    }
+
+    .noCookie {
+        color: #111211;
+        background: transparent;
+        border: 2px solid #703b4c;
+        text-decoration: none;
+    }
+
+    #consentBox img {
+        max-width: 90px;
+    }
+
+    #consentHeader {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
