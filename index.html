@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOME</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/interact.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Chakra Petch, Playfair Display, and Roboto Condensed/Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+
+<!---->
+
+<body>
+<div class="wrapper">
+
+    <!-- FANCY HEADER -->
+    <div class="header-background"></div>
+    <div class="header">
+        <h1 id="TOP" style="position: absolute; right:0; text-align: right; margin-top:0; margin-bottom:-4vw; margin-right: 1vw;">
+            STARBYTE
+        </h1>
+    </div>
+    <div class="header-content">
+        <h2 style="text-align:right; font-size:3vw; margin-right: 1vw;">starbyte://stellarwyrm</h2>
+
+        <picture onclick="toggleScheme()">
+            <source srcset="images/button_ld_light.svg" media="(prefers-color-scheme: dark)"
+                style = "position:absolute; top: 0.5vw; right: 27vw; left: auto; width: 2.5vw; height: 2.5vw;"
+                id="preferMode">
+            <img src="images/button_ld_dark.svg"
+                style = "position:absolute; top: 0.5vw; right: 27vw; left: auto; width: 2.5vw; height: 2.5vw;"
+                id="darkToggle"
+                class="fadeImage">
+        </picture>
+
+        <!-- <img src="images/button_ld_light.svg" 
+            id="darkToggle"
+            onclick="toggleScheme()"
+            style="position:absolute; top: 0.5vw; right: 27vw; left: auto; width: 2.5vw; height: 2.5vw;"> -->
+    </div>
+    
+
+    <!-- NAVIGATION TABLE -->
+    <table>
+        <tr>
+            <th>projects |</th>
+            <td>Music</td>
+            <td>Visual</td>
+            <td>Code</td>
+        </tr>
+        <tr>
+            <th>other |</th>
+            <td>Socials</td>
+            <td>Misc.</td>
+            <td>Contact</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h3>testing1.0</h3>
+    <h4>1. This</h4>
+    
+    
+
+    <p>This is the first text</p>
+    <br>
+    <p style="color: #808080">
+        <img src="construction.png" alt="Wide" title = "Wide" width = "500" height = "300" style="float:right">
+        Nothing important to be put here 'til I make everything look cool..</p>
+
+    <h4>2. Ok</h4>
+    <p style = "font-size: 50%; text-align:center;">Hi</p>
+    <p>I think I mostly recall everything still, to this point. Besides the styling things, but... whatever.</p>
+    <hr>
+
+    <button onclick="toggleScheme()">Useless Button.. unless?</button>
+
+    <hr>
+    <p> I need space! I <br> need <br> to <br> go down <br> the page. <br><br> Hopefully this is far enough.</p>
+
+    <a href="#TOP">This is why (jump to top)</a>
+    <hr>
+
+
+    <a href="https://www.youtube.com/@starbytemusic">YouTube</a>
+</div>
+<script src="js/init.js"></script>
+</body>
+</html>
