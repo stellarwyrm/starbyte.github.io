@@ -5,6 +5,7 @@
     <link rel="icon" type="image/png" href="images/utility/favicon.png"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/cookie.css"/>
+    <link rel="stylesheet" href="css/background.css"/>
     <script src="js/interact.js"></script>
 
     <!-- FONTS -->
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+<div class="wrapper-background"></div>
 <div class="wrapper">
     <div id="consentBox" class="hide">
         <!-- <img src=
@@ -52,15 +54,15 @@
         </h1>
     </div>
     <div class="header-content">
-        <h2 style="text-align:right; font-size:3vw; margin-right: 1vw;">starbyte://stellarwyrm</h2>
+        <h2 style="text-align:left; font-size:3vw; margin-right: 4vw; margin-left: 50vw"><a href="">starbyte://stellarwyrm</a></h2>
 
         <!-- DARK MODE TOGGLE BUTTON -->
         <picture onclick="toggleScheme()">
             <source srcset="images/utility/button_ld_light.svg" media="(prefers-color-scheme: dark)"
-                style = "position:absolute; top: 0.5vw; right: 27vw; left: auto; width: 2.5vw; height: 2.5vw;"
+                style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; width: 2.5vw; height: 2.5vw;"
                 id="preferMode">
             <img src="images/utility/button_ld_dark.svg"
-                style = "position:absolute; top: 0.5vw; right: 27vw; left: auto; 
+                style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; 
                     width: 2.5vw; height: 2.5vw;"
                 id="darkToggle"
                 class="fadeImage">
@@ -74,38 +76,51 @@
     <table>
         <tr>
             <th>projects |</th>
-            <td>
-                <a href="">
+            <td class="big-square">
+                <a href="music.html">
                     <div class="table-content">Music</div>
                     <div class="table-element" style="background-image:url('images/table/recent_music.jpg')"></div>
                 </a>
             </td>
-            <td>
+            <td class="big-square">
                 <a href="">
                     <div class="table-content">Visual</div>
                     <div class="table-element" style="background-image:url('images/table/recent_art.jpg')"></div>
                 </a>
             </td>
-            <td>
-                Code
+            <td class="big-square">
+                <a href="">
+                    <div class="table-content">Code</div>
+                    <div class="table-element" style="background-image:url('https://fakeimg.pl/1024x1024?text=WIP&font=noto')"></div>
+                </a>
             </td>
         </tr>
         <tr>
             <th>other |</th>
-            <td>
-                Socials
+            <td class="big-square">
+                <a href="https://stellarwyrm.carrd.co/">
+                    <div class="table-content" style="font-size:4vw;padding-top:0.5vw;">Commissions</div>
+                    <div class="table-element" style="background-image:url('images/table/commissions_thumb.jpg')"></div>
+                    <p class="table-content" style="font-size:1.5vw; top:16vw; right: 0vw; text-transform:none;">(External Carrd Link)</p>
+                </a>
             </td>
-            <td>
-                Misc.
+            <td class="big-square">
+                <a href="">
+                    <div class="table-content">Misc.</div>
+                    <div class="table-element" style="background-image:url('https://fakeimg.pl/1024x1024?text=WIP&font=noto')"></div>
+                </a>
             </td>
-            <td>
-                Contact
+            <td class="big-square">
+                <a href="">
+                    <div class="table-content">Socials</div>
+                    <div class="table-element" style="background-image:url('https://fakeimg.pl/1024x1024?text=WIP&font=noto')"></div>
+                </a>
             </td>
         </tr>
     </table>
 
 
-    <hr>
+    <!-- <hr>
     <h3>testing1.0</h3>
     <h4>1. This</h4>
     
@@ -125,7 +140,7 @@
 
     <button onclick="toggleScheme()">Useless Button.. unless?</button>
 
-    <a href="https://www.youtube.com/@starbytemusic">YouTube</a>
+    <a href="https://www.youtube.com/@starbytemusic">YouTube</a> -->
 </div>
 <script src="js/init.js"></script>
 </body>

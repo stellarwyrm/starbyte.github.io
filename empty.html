@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>MUSIC</title>
+    <link rel="icon" type="image/png" href="images/utility/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cookie.css"/>
+    <link rel="stylesheet" href="css/background.css"/>
+    <script src="js/interact.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Inria Sans, Chakra Petch, Playfair Display, and Roboto Condensed/Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper-background"></div>
+    <div class="wrapper">
+            <!-- FANCY HEADER -->
+        <div class="header-background"></div>
+        <div class="header">
+            <h1 id="TOP" style="position: absolute; right:0; text-align: right; margin-top:0; margin-bottom:-4vw; margin-right: 1vw;">
+                <a href="index.html">STARBYTE</a>
+            </h1>
+        </div>
+
+        <div class="header-content">
+            <h2 style="text-align:left; font-size:3vw; margin-right: 4vw; margin-left: 50vw"><a href="index.html">
+                starbyte://stellarwyrm</a><strong>/NULL</strong>
+            </h2>
+
+            <!-- DARK MODE TOGGLE BUTTON -->
+            <picture onclick="toggleScheme()">
+                <source srcset="images/utility/button_ld_light.svg" media="(prefers-color-scheme: dark)"
+                    style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; width: 2.5vw; height: 2.5vw;"
+                    id="preferMode">
+                <img src="images/utility/button_ld_dark.svg"
+                    style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; 
+                        width: 2.5vw; height: 2.5vw;"
+                    id="darkToggle"
+                    class="fadeImage">
+            </picture>
+        </div>
+
+
+        <script src="js/init.js"></script>
+
+
+    </div>
+</body>
+</html>

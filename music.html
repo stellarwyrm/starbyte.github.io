@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>MUSIC</title>
+    <link rel="icon" type="image/png" href="images/utility/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cookie.css"/>
+    <link rel="stylesheet" href="css/background.css"/>
+    <script src="js/interact.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Inria Sans, Chakra Petch, Playfair Display, and Roboto Condensed/Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper-background"></div>
+    <div class="wrapper">
+            <!-- FANCY HEADER -->
+        <div class="header-background"></div>
+        <div class="header">
+            <h1 id="TOP" style="position: absolute; right:0; text-align: right; margin-top:0; margin-bottom:-4vw; margin-right: 1vw;">
+                <a href="index.html">STARBYTE</a>
+            </h1>
+        </div>
+
+        <div class="header-content">
+            <h2 style="text-align:left; font-size:3vw; margin-right: 4vw; margin-left: 50vw"><a href="index.html">
+                starbyte://stellarwyrm</a><strong>/MUSIC</strong>
+            </h2>
+
+            <!-- DARK MODE TOGGLE BUTTON -->
+            <picture onclick="toggleScheme()">
+                <source srcset="images/utility/button_ld_light.svg" media="(prefers-color-scheme: dark)"
+                    style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; width: 2.5vw; height: 2.5vw;"
+                    id="preferMode">
+                <img src="images/utility/button_ld_dark.svg"
+                    style = "position:absolute; top: 0.5vw; right: 0.5vw; left: auto; 
+                        width: 2.5vw; height: 2.5vw;"
+                    id="darkToggle"
+                    class="fadeImage">
+            </picture>
+        </div>
+
+
+        <script src="js/init.js"></script>
+
+        <table>
+            <th style="width:5%;margin-right:-20vw;writing-mode: vertical-rl; transform:rotate(180deg); text-align: center;">YouTube</th>
+            <td style="text-align:left;width:0; padding:0;">
+                <div class="youtube" style="position:relative;max-width: min-content;">
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/foP03oikpDI?si=Mw0yNP8YPhW2eofZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </td>
+            <td style="vertical-align: top">
+                <a href="https://www.youtube.com/@starbytemusic"><h4>YouTube.com/@StarbyteMusic</h3></a>
+                <h3>Latest Release: <i>burnsphere</i></h3>
+                <p><br>YouTube is the most frequently updated location for where music is posted.</p>
+            </td>
+        </table>
+        
+
+
+    </div>
+</body>
+</html>
